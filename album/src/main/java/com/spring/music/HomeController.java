@@ -22,11 +22,18 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 	
+	
 		
 		
 		
 		
 		return "index";
+	}
+	@RequestMapping(value ="/about", method = RequestMethod.GET)
+	public String about(Model model) {
+		
+		return "about";
+		
 	}
 	
 }

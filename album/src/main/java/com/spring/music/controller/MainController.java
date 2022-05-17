@@ -13,7 +13,6 @@ public class MainController {
 		return "home";
 	}
 	
-	@RequestMapping(valuel)
 	
 	
 }
