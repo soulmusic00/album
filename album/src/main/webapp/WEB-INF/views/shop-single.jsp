@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="contextPath"  value="${pageContext.request.contextPath}" />
 <html lang="en">
   <head>
     <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
@@ -9,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
-    <link rel="stylesheet" href="${contextPath}/resources/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="${contextPath}/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${contextPath}/resources/css/magnific-popup.css">
-    <link rel="stylesheet" href="${contextPath}/resources/css/jquery-ui.css">
-    <link rel="stylesheet" href="${contextPath}/resources/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="${contextPath}/resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
-    <link rel="stylesheet" href="${contextPath}/resources/css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="${contextPath}/resources/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     
   </head>
   <body>
@@ -66,8 +63,8 @@
       <nav class="site-navigation text-right text-md-center" role="navigation">
         <div class="container">
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li class="has-children active">
-              <a href="/">Home</a>
+            <li class="has-children">
+              <a href="index.html">Home</a>
               <ul class="dropdown">
                 <li><a href="#">Menu One</a></li>
                 <li><a href="#">Menu Two</a></li>
@@ -83,14 +80,14 @@
               </ul>
             </li>
             <li class="has-children">
-              <a href="about">About</a>
+              <a href="about.html">About</a>
               <ul class="dropdown">
                 <li><a href="#">Menu One</a></li>
                 <li><a href="#">Menu Two</a></li>
                 <li><a href="#">Menu Three</a></li>
               </ul>
             </li>
-            <li><a href="shop">Shop</a></li>
+            <li class="active"><a href="shop.html">Shop</a></li>
             <li><a href="#">Catalogue</a></li>
             <li><a href="#">New Arrivals</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -99,91 +96,53 @@
       </nav>
     </header>
 
-    <div class="site-blocks-cover" style="background-image: url(${contextPath}/resources/images/hero_1.jpg);" data-aos="fade">
-      <div class="container">
-        <div class="row align-items-start align-items-md-center justify-content-end">
-          <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-            <h1 class="mb-2">Finding Your Perfect Shoes</h1>
-            <div class="intro-text text-center text-md-left">
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
-              <p>
-                <a href="/home" class="btn btn-sm btn-primary">Shop Now</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section site-section-sm site-blocks-1">
+    <div class="bg-light py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
-            <div class="icon mr-4 align-self-start">
-              <span class="icon-truck"></span>
-            </div>
-            <div class="text">
-              <h2 class="text-uppercase">Free Shipping</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon mr-4 align-self-start">
-              <span class="icon-refresh2"></span>
-            </div>
-            <div class="text">
-              <h2 class="text-uppercase">Free Returns</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon mr-4 align-self-start">
-              <span class="icon-help"></span>
-            </div>
-            <div class="text">
-              <h2 class="text-uppercase">Customer Support</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
-            </div>
-          </div>
+          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Tank Top T-Shirt</strong></div>
         </div>
       </div>
-    </div>
+    </div>  
 
-    <div class="site-section site-blocks-2">
+    <div class="site-section">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-            <a class="block-2-item" href="#">
-              <figure class="image">
-                <img src="${contextPath}/resources/images/women.jpg" alt="" class="img-fluid">
-              </figure>
-              <div class="text">
-                <span class="text-uppercase">Collections</span>
-                <h3>Women</h3>
-              </div>
-            </a>
+          <div class="col-md-6">
+            <img src="images/cloth_1.jpg" alt="Image" class="img-fluid">
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <a class="block-2-item" href="#">
-              <figure class="image">
-                <img src="${contextPath}/resources/images/children.jpg" alt="" class="img-fluid">
-              </figure>
-              <div class="text">
-                <span class="text-uppercase">Collections</span>
-                <h3>Children</h3>
+          <div class="col-md-6">
+            <h2 class="text-black">Tank Top T-Shirt</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vitae, explicabo? Incidunt facere, natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas, distinctio, aperiam, ratione dolore.</p>
+            <p class="mb-4">Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis. Quos repellat dignissimos minus, eveniet nam voluptatibus molestias omnis reiciendis perspiciatis illum hic magni iste, velit aperiam quis.</p>
+            <p><strong class="text-primary h4">$50.00</strong></p>
+            <div class="mb-1 d-flex">
+              <label for="option-sm" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">Small</span>
+              </label>
+              <label for="option-md" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-md" name="shop-sizes"></span> <span class="d-inline-block text-black">Medium</span>
+              </label>
+              <label for="option-lg" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-lg" name="shop-sizes"></span> <span class="d-inline-block text-black">Large</span>
+              </label>
+              <label for="option-xl" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black"> Extra Large</span>
+              </label>
+            </div>
+            <div class="mb-5">
+              <div class="input-group mb-3" style="max-width: 120px;">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
               </div>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <a class="block-2-item" href="#">
-              <figure class="image">
-                <img src="${contextPath}/resources/images/men.jpg" alt="" class="img-fluid">
-              </figure>
-              <div class="text">
-                <span class="text-uppercase">Collections</span>
-                <h3>Men</h3>
+              <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
               </div>
-            </a>
+            </div>
+
+            </div>
+            <p><a href="cart.html" class="buy-now btn btn-sm btn-primary">Add To Cart</a></p>
+
           </div>
         </div>
       </div>
@@ -202,7 +161,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="${contextPath}/resources/images/cloth_1.jpg" alt="Image placeholder" class="img-fluid">
+                    <img src="images/cloth_1.jpg" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Tank Top</a></h3>
@@ -214,7 +173,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="${contextPath}/resources/images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
+                    <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
@@ -226,7 +185,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="${contextPath}/resources/images/cloth_2.jpg" alt="Image placeholder" class="img-fluid">
+                    <img src="images/cloth_2.jpg" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Polo Shirt</a></h3>
@@ -238,7 +197,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="${contextPath}/resources/images/cloth_3.jpg" alt="Image placeholder" class="img-fluid">
+                    <img src="images/cloth_3.jpg" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">T-Shirt Mockup</a></h3>
@@ -250,7 +209,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="${contextPath}/resources/images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
+                    <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
@@ -260,27 +219,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section block-8">
-      <div class="container">
-        <div class="row justify-content-center  mb-5">
-          <div class="col-md-7 site-section-heading text-center pt-4">
-            <h2>Big Sale!</h2>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-md-12 col-lg-7 mb-5">
-            <a href="#"><img src="${contextPath}/resources/images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
-          </div>
-          <div class="col-md-12 col-lg-5 text-center pl-md-5">
-            <h2><a href="#">50% less in all items</a></h2>
-            <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2018</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
-            <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
           </div>
         </div>
       </div>
@@ -321,7 +259,7 @@
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
-              <img src="${contextPath}/resources/images/hero_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
+              <img src="images/hero_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
               <h3 class="font-weight-light  mb-0">Finding Your Perfect Shoes</h3>
               <p>Promo from  nuary 15 &mdash; 25, 2019</p>
             </a>
@@ -344,7 +282,7 @@
                   <input type="submit" class="btn btn-sm btn-primary" value="Send">
                 </div>
               </form>
-            </div>
+            </div>  
           </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
@@ -361,15 +299,15 @@
     </footer>
   </div>
 
-  <script src="${contextPath}/resources/js/jquery-3.3.1.min.js"></script>
-  <script src="${contextPath}/resources/js/jquery-ui.js"></script>
-  <script src="${contextPath}/resources/js/popper.min.js"></script>
-  <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
-  <script src="${contextPath}/resources/js/owl.carousel.min.js"></script>
-  <script src="${contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
-  <script src="${contextPath}/resources/js/aos.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
 
-  <script src="${contextPath}/resources/js/main.js"></script>
+  <script src="js/main.js"></script>
     
   </body>
 </html>
