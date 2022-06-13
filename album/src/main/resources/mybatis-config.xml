@@ -3,4 +3,14 @@
 
 		<configuration>
 		
+			<settings>
+				<setting name="mapUnderscoreToCamelCase" value="true"/>
+			</settings>
+		
+			<typeAliases>
+				<typeAlias type="com.spring.music.album.dto.AlbumDto"     alias="AlbumDto" />
+			</typeAliases>
+	
+			
+		
 		</configuration>
