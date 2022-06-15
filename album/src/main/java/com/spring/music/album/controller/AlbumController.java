@@ -18,12 +18,41 @@ public class AlbumController {
 	@Autowired
 	private AlbumService albumService;
 	
-	@RequestMapping(value="/albumDetail", method=RequestMethod.GET) 
-	public String albumDetail(@RequestParam("albumId") int albumId, Model model) throws Exception {
+//	@RequestMapping(value="/albumDetail", method=RequestMethod.GET) 
+//	public String albumDetail(@RequestParam("albumId") int albumId, Model model) throws Exception {
+//		
+//		model.addAttribute("album", albumService.albumDetail(albumId));
+//		
+//		return "album/albumDetail";
+//	}
+//	
+	
+	@RequestMapping(value="/detail", method = RequestMethod.GET) 
+	public ModelAndView detail(@RequestParam("albumId")int albumId) throws Exception {
 		
-		model.addAttribute("album", albumService.albumDetail(albumId));
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/album/albumDetail");
+		mv.addObject("album", albumService.albumDetail(albumId));
 		
-		return "album/albumDetail";
+		return mv;
+		
 	}
 	
+	@RequestMapping(value ="/", method = RequestMethod.GET)
+	public ModelAndView shop() {
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/album/albumList");
+		
+		return mv;
+		
+		
+	}
+	
+	
+	
 }
+
+
+
+

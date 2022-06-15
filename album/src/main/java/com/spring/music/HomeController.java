@@ -36,12 +36,7 @@ public class HomeController {
 		
 	}
 	
-	@RequestMapping(value ="/shop", method = RequestMethod.GET)
-	public String shop(Model model) {
-		
-		return "shop";
-		
-	}
+
 	
 	
 }
