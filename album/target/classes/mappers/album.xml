@@ -13,4 +13,12 @@
 			ALBUM_ID = #{albumId}
 	</select>
 	
+	<select id="selectAlbumList" resultType="AlbumDto">
+	SELECT
+			*
+	FROM
+			T_SHOPPING_ALBUM
+	
+	</select>
+	
 </mapper>

@@ -39,15 +39,18 @@ public class AlbumController {
 	}
 	
 	@RequestMapping(value ="/", method = RequestMethod.GET)
-	public ModelAndView shop() {
+	public ModelAndView shop() throws Exception {
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/album/albumList");
+		mv.addObject("albums", albumService.listAlbum());
 		
 		return mv;
 		
 		
 	}
+	
+	
 	
 	
 	
